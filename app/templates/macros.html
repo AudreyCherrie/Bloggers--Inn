@@ -1,0 +1,38 @@
+{% macro displayPost(post_list) %}
+  {% for post in post_list %}
+
+
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      {%if post.profile_pic_path %}
+      <img src="{{url_for('static',filename=post.profile_pic_path)}}" alt="..."><br>
+      {%else%}
+      <p>no profile</p>
+      {% endif %}
+      <hr>
+      <div class="caption">
+      <h3 style="font-family: 'Playfair Display', serif;"><a href="/blogs/{{post.id}}"style="color:black;">Title:{{post.post_title}}</a></h3>
+      <p style="font-family: 'Playfair Display', serif;"><b>Description:</b>{{post.post |truncate(100)}}</p>
+      </div>
+    </div>
+    <br>
+  </div>
+
+
+
+
+  {% endfor %}
+  {% endmacro %}
+
+  {% macro displayComments(comments_list) %}
+  {% for comment in comments_list %}
+  <div class="alert alert-warning">
+    <nav aria-label="...">
+  <ul class="pager">
+    <li class="previous disabled"><a href="#"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> {{comment.username}}</a></li>
+  </ul>
+</nav>
+    <p style="font-family: 'Playfair Display', serif;">{{comment.comment}}<p>
+  </div>
+    {% endfor %}
+    {% endmacro %}

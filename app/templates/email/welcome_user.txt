@@ -1,0 +1,4 @@
+Hello {{subscriber.username}}
+Hey there we are soo glad you have subscribed to our blog
+TrendyT's 
+You will be recieving alerts when the latest blogs are posted

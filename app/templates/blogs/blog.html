@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% import 'bootstrap/wtf.html' as wtf %}
+{% import 'macros.html' as macro %}
+
+{% block content %}
+<div class ="container">
+  <div class="row">
+    <div class="col-md-8">
+
+  <h2 style="font-family: 'Playfair Display', serif;"><b> Title:</b> {{posts.post_title}}</h2>
+  <h3 style="font-family: 'Playfair Display', serif;"><b>Author:</b> {{posts.username}}</h3>
+  <p style="font-family: 'Playfair Display', serif;"><b>Blog Post:</b> {{posts.post}}</p>
+  <p style="font-family: 'Playfair Display', serif;"><b>Date:</b> {{posts.post_date}}</p>
+
+  <h3 style="font-family: 'Playfair Display', serif;">Comments</h3>
+  {{macro.displayComments(comments)}}
+ </div>
+ <div class="col-md-4">
+   <div class="alert alert-success" role="alert">
+   {{wtf.quick_form(comments_form)}}
+ </div>
+ </div>
+</div>
+</div>
+{% endblock %}

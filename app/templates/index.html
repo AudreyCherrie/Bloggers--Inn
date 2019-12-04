@@ -1,0 +1,38 @@
+{% import 'macros.html' as macro %}
+{% import 'bootstrap/wtf.html' as wtf %}
+{% extends 'base.html' %}
+{% block styles %}
+{{ super () }}
+
+ <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+
+
+<div class="container">
+<div class="row">
+<ul>
+  {{macro.displayPost(posts)}}
+
+</ul>
+</div>
+</div>
+
+
+
+
+  <div class="container">
+
+
+      <div class="row">
+   <div class="col-md-4"> </div>
+     <div class="col-md-8">
+     <div class="alert alert-info">
+  {{wtf.quick_form(subscribe_form)}}
+
+    </div>
+  </div>
+</div>
+</div>
+{% endblock %}
