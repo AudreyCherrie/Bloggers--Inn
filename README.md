@@ -43,3 +43,14 @@ Markdown
 ## FRAMEWORK
 Flask
 
+
+## DEPLOYMENT
+Heroku
+
+## CONTACT INFORMATION
+Email: mitchelaudrey@gmail.com
+
+Phone:+254 791731565
+
+
+
