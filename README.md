@@ -17,3 +17,8 @@ This project was generated with python version 3.6.8
 
 ## ACCESSING THE SHELL
 Run python3.6 <name-of-file> to use the shell
+
+## RUNNING THE FILE
+Run chmod a+x start.sh on your terminal
+
+Run ./start.sh
