@@ -29,6 +29,13 @@ To get more help on python, check out the python documentation at https://docs.p
 ## USER INTERACTION
 1.To run the application, type ./start.sh
 2.Navigate to the homepage
-3.Sign up to view pitches
+3.Sign up to view the website
 4.Check your email to see the sign up message
-5.Navigate the website to make pitch, vote or view pitches
+5.Navigate the website to view ,delete a blog.
+
+## TECHNOLOGIES USED
+LANGUAGES
+
+Python
+
+Markdown
