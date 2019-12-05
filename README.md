@@ -14,3 +14,6 @@ Admin logins
 
 ## PROJECT SET UP INSTRUCTIONS
 This project was generated with python version 3.6.8
+
+## ACCESSING THE SHELL
+Run python3.6 <name-of-file> to use the shell
