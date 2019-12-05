@@ -22,3 +22,6 @@ Run python3.6 <name-of-file> to use the shell
 Run chmod a+x start.sh on your terminal
 
 Run ./start.sh
+
+## FURTHER HELP
+To get more help on python, check out the python documentation at https://docs.python.org/3/library/
