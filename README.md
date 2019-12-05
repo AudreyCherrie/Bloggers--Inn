@@ -11,3 +11,6 @@ It contains:
 Sign in page
 Subscribe button
 Admin logins
+
+## PROJECT SET UP INSTRUCTIONS
+This project was generated with python version 3.6.8
